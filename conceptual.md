@@ -39,7 +39,10 @@ Answer the following questions below:
   - Redux Thunk exposes dispatch to any function that is passed into dispatch (as opposed to an action object). You can then dispatch an action in a function you dispatched. This is handy for async ops. 
 
 - What are propTypes?
+  - A way of validating the Props given to a component in React Develoment
 
 - Describe the `useCallback` hook.  What is it used for?
+  - The useCallback hook is a way of writing a function that will persist between renders. This is useful when you are using a function in a useEffect hook. Since that function is supposed to be in the Dependency array, if we didn't use useCallback, everytime the function rerendered the function would be remade - which would cause the useEffect to be called again, possibly causing another rerender, possibly causing an inifintie loop. But, if we use useCallback, rerendering the component won't make a new function so it won't cause a loop. 
 
 - Compare and contrast the `useReducer` hook with Redux (including react-redux).  Why would you choose one over the other?
+  - useReducer is useful for storing and manipulating a single section of data. Redux is useful for handling an entire applications data. While you can hoist useReducer to the top of an App, and use Context to mimic the flow of React-Redux. You cannot combine reducers with useReducer, and each dispatch is useReducer specific, so this can get messy quick if your application needs to split the store up into many sections. 
