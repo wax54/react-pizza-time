@@ -1,4 +1,4 @@
-Journey into the world of Star Wars, But this time the path is yours to choose!
+#Journey into the world of Star Wars, But this time the path is yours to choose!
 
 This app uses React, Redux, Bootstrap, React-Router, Axios and the StarWars API.
 
