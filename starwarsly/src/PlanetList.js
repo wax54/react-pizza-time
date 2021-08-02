@@ -1,3 +1,5 @@
+/** Displays a List of all the planets in our store
+ *      + a url to link to that specific planet */
 import React from 'react';
 import {useSelector} from 'react-redux';
 import ItemList from './ItemList'

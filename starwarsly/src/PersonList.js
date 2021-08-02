@@ -1,3 +1,6 @@
+/** Displays a List of all the characters in our store 
+ *      + a url to link to that specific character */
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 

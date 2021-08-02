@@ -1,3 +1,4 @@
+/** A Component to display info on a single star wars Character */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";

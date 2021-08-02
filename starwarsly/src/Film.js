@@ -26,13 +26,15 @@ function Film() {
   }, [missing, id, dispatch]);
 
   if (missing) return <h1 className="mt-5">loading...</h1>;
+  /** This doesn't run unless we have downloaded the film info */
 
+  //Make a list of planets we know + Links
   const planets = film.planets.map(pid => ({
     id: pid,
     url: `/planets/${pid}`,
     display: planetState[pid] ? planetState[pid].name : "Unknown"
   }));
-
+  //Make a list of characters we know + Links (or unknown if we haven't come across them yet)
   const characters = film.characters.map(cid => ({
     id: cid,
     url: `/people/${cid}`,

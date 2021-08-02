@@ -1,3 +1,4 @@
+/** a generic component to display a sublist of items. */
 import React from 'react';
 import { Link } from "react-router-dom";
 
