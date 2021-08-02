@@ -1,3 +1,5 @@
+/** All film related redux actions */
+
 import { LOAD_FILM, RESET_ALL } from "../actions/types";
 
 const INITIAL_STATE = {};

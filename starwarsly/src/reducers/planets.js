@@ -1,3 +1,4 @@
+/** All planet related redux actions */
 import { LOAD_PLANET, RESET_ALL } from "../actions/types";
 
 const INITIAL_STATE = {};

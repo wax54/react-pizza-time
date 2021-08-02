@@ -1,3 +1,4 @@
+/** All people related redux actions */
 import { LOAD_PERSON, RESET_ALL } from "../actions/types";
 
 const INITIAL_STATE = {};
