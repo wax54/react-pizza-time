@@ -1,28 +1,13 @@
-# Journey into the world of Star Wars, But this time the path is yours to choose!
+# Journey into the world of Star Wars 
+## But this time the path is yours to choose!
 
-This app uses React, Redux, Bootstrap, React-Router, Axios and the StarWars API.
+This app uses React, Redux, Redux-Persist, Bootstrap, React-Router, Axios and the StarWars API.
 
-## App Architecture
-- **Index**
-  - **App**
-    - **Navbar**
-    - **Routes**
-      - **Homepage**
-      - **FilmList** (uses Redux to get list of seen Films)
-        - **ItemList**
-      - **PersonList**(uses Redux to get list of known charaters)
-        - **ItemList**
-      - **PlanetList**(uses Redux to get list of visited Planets)
-        - **ItemList**
-      - **Film** (uses url Params to get ID, Planets/People from Redux)
-        - **SubList** (Planets passed in as props)
-        - **SubList** (People passed in as props)
-      - **Planet** (uses url Params to get ID, Films/People from Redux)
-        - **SubList** (Films passed in as props)
-        - **SubList** (People passed in as props)
-      - **Person** (uses url Params to get ID, Films/HomeWorld Name from Redux)
-        - **SubList** (Films passed in as props)
-  
+## Getting Started
+
+To get the app running, simply download the code and run `npm i` within the project directory, this downloads the dependencies. Once all the dependencies are downloaded, run `npm start` to view the App in your browser.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -50,12 +35,27 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Notable Features
+This app uses Redux-Persist to persist the memory of your adventures between browser reloads. Configurations about how the persisted memory is merged into the initial state can be found in src/store.js. If you would like to set a different Loading display while the persisted store is being loaded into Redux, simply set the 'loading' prop in the PersistGate Component in src/index.js to the desired display component. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## App Architecture
+- **Index**
+  - **App**
+    - **Navbar**
+    - **Routes**
+      - **Homepage**
+      - **FilmList** (uses Redux to get list of seen Films)
+        - **ItemList**
+      - **PersonList**(uses Redux to get list of known charaters)
+        - **ItemList**
+      - **PlanetList**(uses Redux to get list of visited Planets)
+        - **ItemList**
+      - **Film** (uses url Params to get ID, Planets/People from Redux)
+        - **SubList** (Planets passed in as props)
+        - **SubList** (People passed in as props)
+      - **Planet** (uses url Params to get ID, Films/People from Redux)
+        - **SubList** (Films passed in as props)
+        - **SubList** (People passed in as props)
+      - **Person** (uses url Params to get ID, Films/HomeWorld Name from Redux)
+        - **SubList** (Films passed in as props)
