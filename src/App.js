@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import './App.css';
 
 import NavBar from "./NavBar";
-import Routes from "./Routes";
+import CurrentDelivery from "./CurrentDelivery";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <div className="App container">
       <BrowserRouter>
         <NavBar />
-        <Routes />
+        <CurrentDelivery />
       </BrowserRouter>
     </div>
   );
